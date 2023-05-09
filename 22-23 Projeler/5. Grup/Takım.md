@@ -9,6 +9,6 @@
 - Edanur YILDIZ <[edayildizz](https://github.com/edayildizz)>
 - Yiğit ÇINAR <[Cnrygt11](https://github.com/Cnrygt11)>
 - İsmail Emre AYDIN <[ismaillemreaydin](https://github.com/ismaillemreaydin)>
-- Tuğbanur KIR <[ismaillemreaydin](https://github.com/TugbaKir)>
+- Tuğbanur KIR <[TugbaKir](https://github.com/TugbaKir)>
 
 **Proje Konusu:** Otel Rezervasyon Otomasyonu
