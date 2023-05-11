@@ -1,0 +1,11 @@
+C:\Users\Acer\source\repos\RecapDemo1\bin\Debug\RecapDemo1.exe.config
+C:\Users\Acer\source\repos\RecapDemo1\bin\Debug\RecapDemo1.exe
+C:\Users\Acer\source\repos\RecapDemo1\bin\Debug\RecapDemo1.pdb
+C:\Users\Acer\source\repos\RecapDemo1\obj\Debug\RecapDemo1.csproj.AssemblyReference.cache
+C:\Users\Acer\source\repos\RecapDemo1\obj\Debug\RecapDemo1.csproj.SuggestedBindingRedirects.cache
+C:\Users\Acer\source\repos\RecapDemo1\obj\Debug\RecapDemo1.Form1.resources
+C:\Users\Acer\source\repos\RecapDemo1\obj\Debug\RecapDemo1.Properties.Resources.resources
+C:\Users\Acer\source\repos\RecapDemo1\obj\Debug\RecapDemo1.csproj.GenerateResource.cache
+C:\Users\Acer\source\repos\RecapDemo1\obj\Debug\RecapDemo1.csproj.CoreCompileInputs.cache
+C:\Users\Acer\source\repos\RecapDemo1\obj\Debug\RecapDemo1.exe
+C:\Users\Acer\source\repos\RecapDemo1\obj\Debug\RecapDemo1.pdb
