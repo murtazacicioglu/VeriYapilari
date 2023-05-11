@@ -1,0 +1,47 @@
+/*
+  Damla SOYDAN - 032190059
+  İrem İÇÖZ - 032190009
+*/
+using System;
+public class Node {
+    public Sefer Sefer { get; set; }
+    public Node Sol { get; set; }
+    public Node Sag { get; set; }
+}
+
+public class KonteynerAgaci {
+    public Node Kok;
+    public KonteynerAgaci(){
+        Kok=null;
+    }
+
+    public void Ekle(Sefer sefer) {
+        if (Kok == null) {
+            Kok = new Node { Sefer = sefer };
+        }
+        else {
+            Node current = Kok;
+            while (true) {
+                if (sefer.GidisTarihi < current.Sefer.GidisTarihi) {
+                    if (current.Sol == null) {
+                        current.Sol = new Node { Sefer = sefer };//sefer=sefer kısmı seferin içindeki seferi alıyor
+                        break;
+                    }
+                    else {
+                        current = current.Sol;
+                    }
+                }
+                else {
+                    if (current.Sag == null) {
+                        current.Sag = new Node { Sefer = sefer };
+                        break;
+                    }
+                    else {
+                        current = current.Sag;
+                    }
+                }
+            }
+        }
+    }
+
+}
