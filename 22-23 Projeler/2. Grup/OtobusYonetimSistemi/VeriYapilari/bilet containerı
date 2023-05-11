@@ -1,0 +1,54 @@
+public class biletkonteyneragacı
+{
+    public Node kok;
+    public biletkonteyneragacı()
+    {
+        kok = null;
+    }
+    public void Ekle(Bilet bilet)
+    {
+        if (kok == null)
+        {
+            kok = new Node() { bilet = bilet };
+        }
+        else
+        {
+            Node current = kok;
+            while (true)
+            {
+                if (bilet.ID < current.bilet.ID)
+                {
+                    if (current.sol == null)
+                    {
+                        current.sol = new Node() { bilet = bilet };
+                        break;
+                    }
+                    else
+                    {
+                        current = current.sol;
+                    }
+                }
+                else
+                {
+                    if (current.sag == null)
+                    {
+                        current.sag = new Node() { bilet = bilet };
+                        break;
+                    }
+                    else
+                    {
+                        current = current.sag;
+                    }
+                }
+            }
+        }
+    }
+}
+
+public class Node
+{
+    public bilet bilet;
+    public Node sol;
+    public Node sag;
+}
+
