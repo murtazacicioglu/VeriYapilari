@@ -207,10 +207,10 @@ namespace RecapDemo1
                 sefer_uyari.Visible = true;
             else
                 sefer_uyari.Visible = false;
-            if (koltuk_numarasi_numupdown.Text == "0")
+           /* if (koltuk_numarasi_numupdown.Text == "0")
                 koltukno_uyari.Visible = true;
             else
-                koltukno_uyari.Visible = false;
+                koltukno_uyari.Visible = false; */
             if (nereden_combobox.Text == nereye_combobox.Text)
                 aynisehir_uyari.Visible = true;
             else
@@ -243,6 +243,12 @@ namespace RecapDemo1
         private void basarilibilet_uyari_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void biletsec_button_Click(object sender, EventArgs e)
+        {
+            KoltukForm koltukForm = new KoltukForm(); // KoltukForm nesnesi oluşturun
+            koltukForm.Show(); // KoltukForm'u gösterin
         }
     }
 }

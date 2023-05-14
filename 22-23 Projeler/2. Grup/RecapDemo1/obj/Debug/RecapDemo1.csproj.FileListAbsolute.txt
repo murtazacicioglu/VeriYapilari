@@ -9,3 +9,4 @@ C:\Users\Acer\source\repos\RecapDemo1\obj\Debug\RecapDemo1.csproj.GenerateResour
 C:\Users\Acer\source\repos\RecapDemo1\obj\Debug\RecapDemo1.csproj.CoreCompileInputs.cache
 C:\Users\Acer\source\repos\RecapDemo1\obj\Debug\RecapDemo1.exe
 C:\Users\Acer\source\repos\RecapDemo1\obj\Debug\RecapDemo1.pdb
+C:\Users\Acer\source\repos\RecapDemo1\obj\Debug\RecapDemo1.KoltukForm.resources

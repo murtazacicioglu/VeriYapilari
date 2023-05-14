@@ -50,7 +50,6 @@
             this.sefer_combobox = new System.Windows.Forms.ComboBox();
             this.mevcut_seferler = new System.Windows.Forms.Label();
             this.koltuk_numarasi = new System.Windows.Forms.Label();
-            this.koltuk_numarasi_numupdown = new System.Windows.Forms.NumericUpDown();
             this.bilet_sec_combobox = new System.Windows.Forms.ComboBox();
             this.bilet_sec = new System.Windows.Forms.Label();
             this.bilet_sil = new System.Windows.Forms.Label();
@@ -77,8 +76,8 @@
             this.basarilibilet_uyari = new System.Windows.Forms.Label();
             this.basarilibiletsil_uyari = new System.Windows.Forms.Label();
             this.girisyaphata_uyari = new System.Windows.Forms.Label();
+            this.biletsec_button = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.yas_numupdown)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.koltuk_numarasi_numupdown)).BeginInit();
             this.SuspendLayout();
             // 
             // hosgeldiniz
@@ -477,14 +476,6 @@
             this.koltuk_numarasi.TabIndex = 24;
             this.koltuk_numarasi.Text = "Koltuk Numarası:";
             // 
-            // koltuk_numarasi_numupdown
-            // 
-            this.koltuk_numarasi_numupdown.Location = new System.Drawing.Point(595, 423);
-            this.koltuk_numarasi_numupdown.Name = "koltuk_numarasi_numupdown";
-            this.koltuk_numarasi_numupdown.Size = new System.Drawing.Size(73, 21);
-            this.koltuk_numarasi_numupdown.TabIndex = 25;
-            this.koltuk_numarasi_numupdown.Tag = "";
-            // 
             // bilet_sec_combobox
             // 
             this.bilet_sec_combobox.FormattingEnabled = true;
@@ -810,12 +801,23 @@
             this.girisyaphata_uyari.Text = "* İşlem başarısız! Lütfen giriş yaptığınızdan emin olunuz!  ";
             this.girisyaphata_uyari.Visible = false;
             // 
+            // biletsec_button
+            // 
+            this.biletsec_button.Location = new System.Drawing.Point(575, 421);
+            this.biletsec_button.Name = "biletsec_button";
+            this.biletsec_button.Size = new System.Drawing.Size(94, 23);
+            this.biletsec_button.TabIndex = 52;
+            this.biletsec_button.Text = "Seçiniz";
+            this.biletsec_button.UseVisualStyleBackColor = true;
+            this.biletsec_button.Click += new System.EventHandler(this.biletsec_button_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(1080, 572);
+            this.Controls.Add(this.biletsec_button);
             this.Controls.Add(this.girisyaphata_uyari);
             this.Controls.Add(this.basarilibiletsil_uyari);
             this.Controls.Add(this.basarilibilet_uyari);
@@ -842,7 +844,6 @@
             this.Controls.Add(this.bilet_sec_combobox);
             this.Controls.Add(this.bilet_sec);
             this.Controls.Add(this.bilet_sil);
-            this.Controls.Add(this.koltuk_numarasi_numupdown);
             this.Controls.Add(this.koltuk_numarasi);
             this.Controls.Add(this.sefer_combobox);
             this.Controls.Add(this.mevcut_seferler);
@@ -873,7 +874,6 @@
             this.Text = "Şirket Adı";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.yas_numupdown)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.koltuk_numarasi_numupdown)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -903,7 +903,6 @@
         private System.Windows.Forms.ComboBox sefer_combobox;
         private System.Windows.Forms.Label mevcut_seferler;
         private System.Windows.Forms.Label koltuk_numarasi;
-        private System.Windows.Forms.NumericUpDown koltuk_numarasi_numupdown;
         private System.Windows.Forms.ComboBox bilet_sec_combobox;
         private System.Windows.Forms.Label bilet_sec;
         private System.Windows.Forms.Label bilet_sil;
@@ -930,6 +929,7 @@
         private System.Windows.Forms.Label basarilibilet_uyari;
         private System.Windows.Forms.Label basarilibiletsil_uyari;
         private System.Windows.Forms.Label girisyaphata_uyari;
+        private System.Windows.Forms.Button biletsec_button;
     }
 }
 
