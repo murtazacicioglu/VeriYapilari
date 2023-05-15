@@ -1,12 +1,12 @@
 ﻿namespace VeriYapilari.Primitive;
-    
-public class TekYonluStringDugumu
+
+public class TekYonluDugum<T>
 {
-    public string Deger { get; set; }
+    public T Deger { get; set; }
 
-    public TekYonluStringDugumu? Siradaki { get; set; }
+    public TekYonluDugum<T>? Siradaki { get; set; }
 
-    public TekYonluStringDugumu(string deger)
+    public TekYonluDugum(T deger)
     {
         Deger = deger;
     }
