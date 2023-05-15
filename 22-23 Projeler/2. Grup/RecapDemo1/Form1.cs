@@ -15,8 +15,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace RecapDemo1
 {
+
     public partial class Form1 : Form
     {
         public Form1()
@@ -139,9 +141,7 @@ namespace RecapDemo1
         private void tcbos_uyari_VisibleChanged(object sender, EventArgs e)
         {
             if (tcbos_uyari.Visible)
-            {
                 tc_kimlik_textbox.Focus();
-            }
         }
 
         private void giris_button_Click_1(object sender, EventArgs e)
@@ -208,8 +208,8 @@ namespace RecapDemo1
             else
                 sefer_uyari.Visible = false;
            /* if (koltuk_numarasi_numupdown.Text == "0")
-                koltukno_uyari.Visible = true;
-            else
+                koltukno_uyari.Visible = true;                KOD DEVRE DIŞI !
+            else                                                     
                 koltukno_uyari.Visible = false; */
             if (nereden_combobox.Text == nereye_combobox.Text)
                 aynisehir_uyari.Visible = true;
@@ -220,7 +220,6 @@ namespace RecapDemo1
             if (girisyaphata_uyari.Visible == false && nereden_uyari.Visible == false && nereye_uyari.Visible == false && sefer_uyari.Visible == false && koltukno_uyari.Visible == false && aynisehir_uyari.Visible == false)
                 basarilibilet_uyari.Visible = true;
            
-
         }
 
 
@@ -232,6 +231,7 @@ namespace RecapDemo1
                 biletsil_uyari.Visible = false;
             if(biletsil_uyari.Visible == false)
                 basarilibiletsil_uyari.Visible=true;
+
         }
 
         private void zaman_dateTimePicker_ValueChanged(object sender, EventArgs e)
@@ -248,7 +248,7 @@ namespace RecapDemo1
         private void biletsec_button_Click(object sender, EventArgs e)
         {
             KoltukForm koltukForm = new KoltukForm(); // KoltukForm nesnesi oluşturun
-            koltukForm.Show(); // KoltukForm'u gösterin
+            koltukForm.Show();                        // KoltukForm'u gösterin
         }
     }
-}
+}   
