@@ -2,6 +2,7 @@
 
 public class Class1
 {
+    
     public class Terminal
     {
         public string Name { get; set; }
