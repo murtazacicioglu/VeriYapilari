@@ -77,7 +77,9 @@
             this.girisyaphata_uyari = new System.Windows.Forms.Label();
             this.biletsec_button = new System.Windows.Forms.Button();
             this.directorySearcher1 = new System.DirectoryServices.DirectorySearcher();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.yas_numupdown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // hosgeldiniz
@@ -679,9 +681,9 @@
             this.koltukno_uyari.Location = new System.Drawing.Point(419, 428);
             this.koltukno_uyari.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.koltukno_uyari.Name = "koltukno_uyari";
-            this.koltukno_uyari.Size = new System.Drawing.Size(207, 15);
+            this.koltukno_uyari.Size = new System.Drawing.Size(205, 15);
             this.koltukno_uyari.TabIndex = 43;
-            this.koltukno_uyari.Text = "* Lütfen bu alanı boş bırakmayınız!";
+            this.koltukno_uyari.Text = "* Lütfen koltuk numaranızı seçiniz!";
             this.koltukno_uyari.Visible = false;
             // 
             // biletsil_uyari
@@ -805,12 +807,23 @@
             this.directorySearcher1.ServerPageTimeLimit = System.TimeSpan.Parse("-00:00:01");
             this.directorySearcher1.ServerTimeLimit = System.TimeSpan.Parse("-00:00:01");
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.HighlightText;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dataGridView1.GridColor = System.Drawing.SystemColors.Window;
+            this.dataGridView1.Location = new System.Drawing.Point(744, 284);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(290, 276);
+            this.dataGridView1.TabIndex = 53;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(1080, 572);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.biletsec_button);
             this.Controls.Add(this.girisyaphata_uyari);
             this.Controls.Add(this.basarilibiletsil_uyari);
@@ -867,6 +880,7 @@
             this.Text = "Şirket Adı";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.yas_numupdown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -912,7 +926,6 @@
         private System.Windows.Forms.Label nereden_uyari;
         private System.Windows.Forms.Label nereye_uyari;
         private System.Windows.Forms.Label sefer_uyari;
-        private System.Windows.Forms.Label koltukno_uyari;
         private System.Windows.Forms.Label biletsil_uyari;
         private System.Windows.Forms.Label tc11rakam_uyari;
         private System.Windows.Forms.Label basariligiris_uyari;
@@ -923,6 +936,8 @@
         private System.Windows.Forms.Label girisyaphata_uyari;
         private System.Windows.Forms.Button biletsec_button;
         private System.DirectoryServices.DirectorySearcher directorySearcher1;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label koltukno_uyari;
     }
 }
 

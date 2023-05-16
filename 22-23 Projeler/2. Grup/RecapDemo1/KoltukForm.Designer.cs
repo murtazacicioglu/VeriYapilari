@@ -117,7 +117,6 @@
             this.button13 = new System.Windows.Forms.Button();
             this.dolukoltuk_uyari = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.koltuk_onay_button = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -1032,7 +1031,7 @@
             this.dolukoltuk_uyari.AutoSize = true;
             this.dolukoltuk_uyari.Font = new System.Drawing.Font("MS Reference Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.dolukoltuk_uyari.ForeColor = System.Drawing.Color.Red;
-            this.dolukoltuk_uyari.Location = new System.Drawing.Point(79, 454);
+            this.dolukoltuk_uyari.Location = new System.Drawing.Point(194, 449);
             this.dolukoltuk_uyari.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.dolukoltuk_uyari.Name = "dolukoltuk_uyari";
             this.dolukoltuk_uyari.Size = new System.Drawing.Size(359, 15);
@@ -1051,23 +1050,11 @@
             this.pictureBox1.TabIndex = 228;
             this.pictureBox1.TabStop = false;
             // 
-            // koltuk_onay_button
-            // 
-            this.koltuk_onay_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.koltuk_onay_button.Location = new System.Drawing.Point(598, 445);
-            this.koltuk_onay_button.Name = "koltuk_onay_button";
-            this.koltuk_onay_button.Size = new System.Drawing.Size(61, 33);
-            this.koltuk_onay_button.TabIndex = 229;
-            this.koltuk_onay_button.Text = "Seç";
-            this.koltuk_onay_button.UseVisualStyleBackColor = true;
-            this.koltuk_onay_button.Click += new System.EventHandler(this.koltuk_onay_button_Click);
-            // 
             // KoltukForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(761, 499);
-            this.Controls.Add(this.koltuk_onay_button);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dolukoltuk_uyari);
             this.Controls.Add(this.label12);
@@ -1255,6 +1242,5 @@
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Label dolukoltuk_uyari;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button koltuk_onay_button;
     }
 }

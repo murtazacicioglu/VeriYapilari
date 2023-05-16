@@ -30,10 +30,15 @@ namespace RecapDemo1
 
         }
 
+        
+
+
         private void Form1_Load(object sender, EventArgs e)
         {
+                dataGridView1.Visible = false;
         }
 
+        
         /* 
           TextBox'a sadece sayı girişine izin verir ve giriş yapılan karakterlerin sayı olup olmadığını kontrol eder. 
         */
@@ -215,11 +220,20 @@ namespace RecapDemo1
                 aynisehir_uyari.Visible = true;
             else
                 aynisehir_uyari.Visible = false;
-            if (basariligiris_uyari.Visible != true)
+            if (basariligiris_uyari.Visible == false)
                 girisyaphata_uyari.Visible = true;
             if (girisyaphata_uyari.Visible == false && nereden_uyari.Visible == false && nereye_uyari.Visible == false && sefer_uyari.Visible == false && koltukno_uyari.Visible == false && aynisehir_uyari.Visible == false)
                 basarilibilet_uyari.Visible = true;
-           
+            if (basariligiris_uyari.Visible == false)
+                girisyaphata_uyari.Visible = true;
+            else
+                girisyaphata_uyari.Visible = false;
+            if (girisyaphata_uyari.Visible == false && nereden_uyari.Visible == false && nereye_uyari.Visible == false && sefer_uyari.Visible == false && koltukno_uyari.Visible == false && aynisehir_uyari.Visible == false && basariligiris_uyari.Visible == true)
+                basarilibilet_uyari.Visible= true;
+            if (basariligiris_uyari.Visible == false)
+                girisyaphata_uyari.Visible = true;
+            else
+                girisyaphata_uyari.Visible = false;
         }
 
 
@@ -229,8 +243,28 @@ namespace RecapDemo1
                 biletsil_uyari.Visible = true;
             else
                 biletsil_uyari.Visible = false;
-            if(biletsil_uyari.Visible == false)
-                basarilibiletsil_uyari.Visible=true;
+            if (biletsil_uyari.Visible == false)
+            {
+                basarilibiletsil_uyari.Visible = true;
+                dataGridView1.Visible = true;
+                DataTable table = new DataTable();
+                table.Columns.Add("    ");    //1.sutun
+                table.Columns.Add("İnfo");    //2.sutun
+                table.Rows.Add("T.C No:");    //1.satir  ikincil parametre olarak karşısındaki değer verilir.
+                table.Rows.Add("İsim:");      //2.satir
+                table.Rows.Add("Soyisim:");   //3.satir
+                table.Rows.Add("Cinsiyet:");  //4.satir
+                table.Rows.Add("Yaş:");       //5.satir
+                table.Rows.Add("Nereden:");   //6.satir
+                table.Rows.Add("Nereye:");    //7.satir
+                table.Rows.Add("Tarih:");     //8.satir
+                table.Rows.Add("Sefer:");     //9.satir
+                table.Rows.Add("Koltuk No:");  //10.satir
+
+                // Tabloyu DataGridView bileşenine atadım
+                dataGridView1.DataSource = table;
+            }
+
 
         }
 
