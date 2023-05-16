@@ -2,14 +2,14 @@
 
 public class AgacDugumu
 {
-    public int value;
-    public AgacDugumu? left;
-    public AgacDugumu? right;
+    public int Deger { get; set; }
+    public AgacDugumu? Sol { get; set; }
+    public AgacDugumu? Sag { get; set; }
 
-    public AgacDugumu(int value)
+    public AgacDugumu(int deger)
     {
-        this.value = value;
-        left = null;
-        right = null;
+        Deger = deger;
+        Sol = null;
+        Sag = null;
     }
 }
