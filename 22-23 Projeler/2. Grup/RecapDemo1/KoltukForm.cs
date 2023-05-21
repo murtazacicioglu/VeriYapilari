@@ -1,7 +1,7 @@
 ﻿/*
  * Sabir SÜLEYMANLI <suleymanli.sabir@anticverse.com>
  * 
- * KoltukForm.cs
+ *  KoltukForm.cs
  * 
  */
 

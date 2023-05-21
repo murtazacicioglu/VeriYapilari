@@ -1,4 +1,11 @@
-﻿using System;
+﻿/*
+ *  Zeynep Uysal        <zeynepuysal2001@gmail.com>
+ *  
+ *  Fatma Nur Ayyıldız  <ayyildizfatmanur@gmail.com>
+ * 
+ * iller_terminaller.cs
+ */
+using System;
 
 public class Class1
 {

@@ -1,4 +1,13 @@
 ﻿
+/*
+ *  İrem İçöz        <iremicoz2002@hotmail.com>
+ *  
+ *  Zeynep Kılınçer  <zkilincer12@gmail.com>
+ *  
+ *  Damla Soydan     <032190059@ogr.uludag.edu.tr>
+ * 
+ *  bilet_olustur.cs
+ */
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
